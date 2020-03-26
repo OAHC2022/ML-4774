@@ -1,0 +1,3 @@
+download:
+- pip install googlemaps
+- pip install -U python-dotenv
