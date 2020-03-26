@@ -36,7 +36,7 @@ def get_coordinate(api_key, bldg_list):
     result = []
     counter = 0
     for bldg in bldg_list:
-        geocode_result = gm.geocode('{}'.format(bldg))
+        geocode_result = gm.geocode('{}, va'.format(bldg))
         loc_lat = geocode_result[0]['geometry']['location']['lat']
         loc_lng = geocode_result[0]['geometry']['location']['lng']
         ne_lat = geocode_result[0]['geometry']['viewport']['northeast']['lat']
